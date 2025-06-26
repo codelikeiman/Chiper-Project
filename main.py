@@ -1,4 +1,4 @@
-text = 'mrttaqrhknsw ih puggrur'
+text = 'firmansyah hadinata'
 custom_key = 'happycoding'
 
 def vigenere(message, key, direction=1):
@@ -30,7 +30,8 @@ def encrypt(message, key):
 def decrypt(message, key):
     return vigenere(message, key, -1)
 
-print(f'\nEncrypted text: {text}')
-print(f'Key: {custom_key}')
-decryption = decrypt(text, custom_key)
-print(f'\nDecrypted text: {decryption}\n')
+encryption = encrypt(text, custom_key)
+print(f'\n{encryption}\n')
+
+# decryption = decrypt(text, custom_key)
+# print(f'\n{decryption}\n')
